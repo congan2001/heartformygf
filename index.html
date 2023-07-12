@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Heart Draw</title>
+    <style>
+        .heart {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 200px auto;
+            background-color: rgba(52, 152, 219, 1);
+ 
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        .heart:before,
+        .heart:after {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            content: '';
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            background-color: rgba(52, 152, 219, 1);
+        }
+        .heart:before {
+            bottom: 0px;
+            left: -100px;
+        }
+        .heart:after {
+            top: -100px;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+</body>
+</html>
